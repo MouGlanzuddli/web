@@ -42,6 +42,44 @@ div{
   margin: 5px;
   padding: 2px;
 }
+/* General styles */
+div {
+  display: inline-block; /* To place divs next to each other */
+  width: 100%; /* Default width of divs */
+  box-sizing: border-box; /* Ensures padding and border are included in width */
+}
+
+img {
+  width: 100%; /* Make the image fill the div width */
+  max-height: 30vh; /* Allow images to scale with the viewport height */
+}
+
+.label {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* First Media Query (triggers at 772px) */
+@media all and (min-width: 772px) {
+  div {
+    width: 45%; /* Change the width of divs to 45% of the viewport width */
+  }
+
+  img {
+    max-height: 30vh; /* Ensure image height is limited to 30% of viewport height */
+  }
+}
+
+/* Second Media Query (triggers at 998px) */
+@media all and (min-width: 998px) {
+  div {
+    width: 30%; /* Change the width of divs to 30% of the viewport width */
+  }
+
+  img {
+    max-height: 30vh; /* Maintain the maximum height of images */
+  }
+}
 
 
 
